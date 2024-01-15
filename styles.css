@@ -1,0 +1,312 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+.w13{
+    width: 13%;
+}
+
+.w30{
+    width: 30%;
+}
+
+.w20{
+    width: 20%;
+}
+
+.w25{
+    width: 25%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w60{
+    width: 60%;
+}
+
+/*header*/
+
+header{
+    padding: 0px 275px;
+}
+
+    /*1ra fila*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.top1{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.top1 a{
+    color: gray;
+}
+
+.top1 li{
+    font-size: 20px; 
+    padding: 0px 10px;
+}
+
+.sesion{
+    border-right: 1px solid gray;
+}
+    /*2nda fila*/
+
+.top2{
+    padding: 30px 0px 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+    border-bottom: 3px solid yellow;
+}
+
+.top2 .logo{
+    width: 260px;
+}
+
+.top2 img{
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+}
+    /*hover*/
+
+.top1 li:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+.top2 .top2hover{
+    padding: 10px 35px;
+}
+
+.top2 .top2hover:hover{
+    background-color: yellow;
+}
+
+/*main*/
+
+    /*background*/
+main{
+
+    background-image: url(imgs/bodyBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+}
+
+    /*peliculas 1ra columna*/
+
+#separador{
+    height: 250px;
+}
+#peliculas{
+    padding: 0px 275px;
+}
+
+#contenido{
+    background-color: rgb(240, 233, 233);
+}
+
+#contenido ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+#contenido ul li{
+    width: 130px;
+    margin: 0 5px 0 5px;
+    background-color: #d3d3d3;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#contenido ul li a{
+    color: rgb(81, 81, 235);
+}
+
+    /*hover*/
+
+#contenido ul li:hover{
+    background-color: rgb(81, 81, 235);
+}
+
+#contenido li:hover a{
+    color: white;
+}
+
+    /*ordenar 2nda columna*/
+
+#contenido ol{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+
+#contenido ol li{
+    font-size: 18px;
+    padding: 10px;
+    margin: 8px;
+}
+
+.ordenarPor{
+    color: rgb(81, 81, 235);
+    font-family: "Roboto", sans-serif;  
+}
+
+.topPeliculas{
+    background-color: white;
+}
+
+.topPeliculas a{
+    color: rgb(81, 81, 235);
+}
+
+.AZ{
+    color: white;
+    background-color: rgb(81, 81, 235);
+    text-decoration: underline;
+}
+
+.AZ a{
+    color: white;
+}
+
+    /*hover*/
+
+.topPeliculas:hover{
+    background-color: rgb(81, 81, 235);
+    color: white;
+}
+
+/*contenido principal*/
+
+#mainContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#pelicula{
+    border: 1px solid #d5d5d5;
+    box-shadow: 0px 1px 20px #d5d5d5;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#pelicula h1{
+    padding-bottom: 8px;
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(81, 81, 235);
+    
+}
+
+#pelicula img{
+    width: 100%;
+}
+
+/* estrellas */
+
+.w12{
+    width: 12%;
+}
+
+.stars, .stars .w50{
+    display: flex;
+}
+
+.stars .w50 .star{
+    margin: 1px;
+}
+
+.stars .w30 p{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.stars .w20 .share{
+    padding: 5px;
+}
+
+#pelicula .w20, .stars .w30 p, .stars .w12{
+    display: flex;
+    align-items: center;
+}
+
+/*
+.stars, .stars .w50{
+    display: flex;
+}
+
+.stars .w30 p{
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+#pelicula .w20, #pelicula .w25, .stars .w30 p{
+    display: flex;
+    align-items: center;
+}
+*/
+
+/*footer*/
+
+    /*icons*/
+
+#icons{
+    display: flex;
+    justify-content: center;
+}
+
+#icons img{
+    margin: 50px 60px;
+    width: 50px;
+}
+
+    /*footer content*/
+
+#footContent{
+    display: flex;
+    padding: 70px 250px 140px 250px;
+    justify-content: space-around;
+}
+
+#footContent ul li{
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+#footContent ul li a{
+    color: gray;
+}
+
+#footContent h3{
+    font-size: 28px;
+    font-weight: 400;
+    color: blue;
+}
